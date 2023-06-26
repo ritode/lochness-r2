@@ -125,6 +125,10 @@
   display: inline-flex;
   overflow: auto;
   gap: 20px;
+  cursor: grab;
+}
+.testimonial-snippets:active {
+  cursor: grabbing;
 }
 .testimonial-snippets .card {
   text-wrap: nowrap;

@@ -40,6 +40,11 @@ top: 495px; */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04), 0px 1px 1px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
 }
+.sign-up input:hover {
+  border: 2px solid darkslategray;
+}
+.sign-up input:active {
+}
 .sign-up button {
   margin-bottom: 42px;
   /* Grey/900 */
@@ -70,4 +75,7 @@ top: 495px; */
   color: #19191a;
 
   text-wrap: nowrap;
+}
+.alert {
+  color: crimson !important;
 }

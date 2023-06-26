@@ -1,5 +1,29 @@
+import { useState, useRef } from "react";
 import "./Landing.css";
 export default function Landing() {
+  const containerRef = useRef(null);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [startX, setStartX] = useState(null);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (event) => {
+    setIsScrolling(true);
+    setStartX(event.pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+  };
+
+  const handleMouseUp = () => {
+    setIsScrolling(false);
+  };
+
+  const handleMouseMove = (event) => {
+    if (!isScrolling) return;
+
+    event.preventDefault();
+    const x = event.pageX - containerRef.current.offsetLeft;
+    const dx = x - startX;
+    containerRef.current.scrollLeft = scrollLeft - dx;
+  };
   const images = {
     cards: ["Card1.png", "Card2.png", "Card3.png"],
     path: "./images/",
@@ -57,7 +81,14 @@ export default function Landing() {
         <div className="line" />
         <div className="bottom">
           <img src="./images/Logo.png" alt="logo" />
-          <div className="testimonial-snippets">
+          <div
+            className="testimonial-snippets"
+            ref={containerRef}
+            // className="horizontal-scroll"
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            onMouseMove={handleMouseMove}
+          >
             {testimonials.map((data) => (
               <div className="card">
                 <div className="top">
