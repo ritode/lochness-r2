@@ -1,5 +1,20 @@
 .App {
-  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    flex-flow: column-reverse;
+  }
+  .sign-up {
+    width: auto !important;
+  }
+  .landing {
+    width: auto !important;
+  }
 }
 
 .App-logo {
@@ -35,4 +50,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+#root {
+  background-color: black;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }

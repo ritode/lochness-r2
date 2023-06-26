@@ -1,0 +1,73 @@
+.sign-up {
+  width: 45%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+}
+.sign-up h3 {
+  margin: 32px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 120%;
+  /* or 47px */
+
+  /* Grey/300 */
+
+  color: #b0b1b3;
+}
+.sign-up input {
+  margin-bottom: 24px;
+  align-items: center;
+  padding: 20px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  /* width: 340px;
+  height: 59px; */
+  /* left: 950px;
+top: 495px; */
+
+  background: #ffffff;
+  /* Grey/100 */
+
+  border: 1px solid #e5e5e6;
+  /* ShadowDropdown */
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04), 0px 1px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+.sign-up button {
+  margin-bottom: 42px;
+  /* Grey/900 */
+
+  background: #19191a;
+  /* Grey/900 */
+
+  border: 1px solid #19191a;
+  border-radius: 8px;
+  color: white;
+  padding: 18px 28px;
+  width: 100%;
+}
+.sign-up p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Grey/900 */
+
+  color: #19191a;
+
+  text-wrap: nowrap;
+}
