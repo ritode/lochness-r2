@@ -15,12 +15,12 @@ export default function SignUp() {
     console.log(isValid);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
+  const handleSubmit = () => {
     if (!validateEmail(email)) {
       setIsValid(false);
       return;
+    } else {
+      window.location.href = "https://app.loch.one/welcome";
     }
   };
   return (
@@ -36,7 +36,9 @@ export default function SignUp() {
       />
 
       {!isValid && <p className="alert">Please enter a valid email.</p>}
-      <button type="submit">Get started</button>
+      <button type="submit" onClick={handleSubmit}>
+        Get started
+      </button>
       <p>You’ll receive an email with an invite link to join.</p>
     </div>
   );

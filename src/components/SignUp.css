@@ -57,6 +57,15 @@ top: 495px; */
   color: white;
   padding: 18px 28px;
   width: 100%;
+  cursor: pointer;
+}
+.sign-up button:hover {
+  scale: 1.02;
+  font-weight: 600;
+}
+.sign-up button:active {
+  scale: 1.02;
+  font-weight: 600;
 }
 .sign-up p {
   font-family: "Inter";
