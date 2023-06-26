@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/loch-website/static/css/main.a64777aa.css",
-    "main.js": "/loch-website/static/js/main.fc586700.js",
-    "static/js/787.7a269200.chunk.js": "/loch-website/static/js/787.7a269200.chunk.js",
-    "index.html": "/loch-website/index.html",
-    "main.a64777aa.css.map": "/loch-website/static/css/main.a64777aa.css.map",
-    "main.fc586700.js.map": "/loch-website/static/js/main.fc586700.js.map",
-    "787.7a269200.chunk.js.map": "/loch-website/static/js/787.7a269200.chunk.js.map"
+    "main.css": "/lochness-r2/static/css/main.a64777aa.css",
+    "main.js": "/lochness-r2/static/js/main.d506df23.js",
+    "static/js/787.7a269200.chunk.js": "/lochness-r2/static/js/787.7a269200.chunk.js",
+    "index.html": "/lochness-r2/index.html",
+    "main.a64777aa.css.map": "/lochness-r2/static/css/main.a64777aa.css.map",
+    "main.d506df23.js.map": "/lochness-r2/static/js/main.d506df23.js.map",
+    "787.7a269200.chunk.js.map": "/lochness-r2/static/js/787.7a269200.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a64777aa.css",
-    "static/js/main.fc586700.js"
+    "static/js/main.d506df23.js"
   ]
 }
